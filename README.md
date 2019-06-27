@@ -4,7 +4,7 @@ Simple node js script to get the comments of a pdf (written using adobe acrobat 
 
 ### Install
 ```
-git clone <repo_url>
+git clone https://github.com/ale8193/acrobat-comments-parser.git
 cd acrobat-comments-parser
 yarn install
 ```
