@@ -1,5 +1,8 @@
 
+Comments/*
 Results/*
 PartialResults/*
+
+!Comments/.gitkeep
 !Results/.gitkeep
 !PartialResults/.gitkeep
