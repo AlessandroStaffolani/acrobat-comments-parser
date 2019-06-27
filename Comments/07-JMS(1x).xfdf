@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xfdf xmlns="http://ns.adobe.com/xfdf/" xml:space="preserve"
+><annots
+><text color="#FFD100" creationdate="D:20181108173209+01'00'" flags="print,nozoom,norotate" date="D:20181108173323+01'00'" name="09ed9ea8-12bd-e943-987a-8ff294b26d3e" icon="Comment" page="8" rect="326.016000,195.228000,344.016000,213.228000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>A viene eliminato dalla coda solo quando tutti i subscriber della coda hanno letto A.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="8" rect="720.000000,155.959000,924.000000,269.959000"
+/></text
+><highlight color="#FFD100" opacity="0.399994" creationdate="D:20181109091855+01'00'" flags="print" date="D:20181109091920+01'00'" name="36151d59-5fc4-f94c-8407-59e036e5959b" page="12" coords="499.030000,414.812000,597.742000,414.812000,499.030000,392.300000,597.742000,392.300000,499.030000,386.012000,698.110000,386.012000,499.030000,363.500000,698.110000,363.500000" rect="493.020000,362.797000,704.119000,415.515000" subject="Evidenziato" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Quando parlaimo di transazioni parliamo solo di transazioni di questo tipo.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="12" rect="584.133000,300.938000,788.350000,414.829000"
+/></highlight
+><text color="#FFD100" creationdate="D:20181109092156+01'00'" flags="print,nozoom,norotate" date="D:20181109092517+01'00'" name="890995ce-fe96-6049-ae0a-a951faf75f37" icon="Comment" page="14" rect="586.540000,498.731000,604.540000,516.731000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>JMS: non è un sistema a scambio di messaggi ma è un'interfaccia che mi permette di accedere alle funzionalità di sistemi già esistenti (JMS Provider).
+Il sistema è molto simile a quello di JNDI&#xD;&#xD;I message driven bean usano principalmente le code JMS (Esiste anche un'altra tipologia ma non è molto utilizzata --&gt; qualcosa a che fare con xml).</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="14" rect="720.000000,156.400000,924.000000,270.400000"
+/></text
+><text color="#FFD100" creationdate="D:20181109092921+01'00'" flags="print,nozoom,norotate" date="D:20181109093003+01'00'" name="14ec5c26-c18c-5644-a082-172e44a4a084" icon="Comment" page="15" rect="302.497000,27.733800,320.497000,45.733800" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Il sistema proprietario fornisce anche delle funzioni java che fanno da jms provider --&gt; questo per rendere il sistema proprietario compatibile con JMS</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="15" rect="720.000000,156.400000,924.000000,270.400000"
+/></text
+><text color="#FFD100" creationdate="D:20181109093123+01'00'" flags="print,nozoom,norotate" date="D:20181109093724+01'00'" name="46da9b84-a3bc-0c48-9bc4-14ced8960780" icon="Comment" page="16" rect="359.466000,252.400000,377.466000,270.400000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Questo provider di servizi di messaggistica sarà un server che riceverà i messaggi da una parte e li inserirà in una coda. Questi poi verranno consumati dal ricevente e quindi eliminati dalla coda. 
+
+Come faccio in una applicazione java per interagire con JMS? 
+Destination e ConnectionFactory sono i due oggetti fondamentali per il suo utilizzo. Destination ci dà l'astrazione della coda o del topic nel caso di modello publish/subscribe.
+Connection Factory: factory che ci permette di instaziare la nostra connessione logica verso il sistema di messaggistica. Quindi per poter usare JMS dovremo partire dalla Connection Factory.
+
+Si parte dalla descrizione di questi oggetti in quanto ogni volta che abbiamo un JMS operativol'amministratore di sistema avrà sicuramente registrato una Connection factory nel sistema JNDI.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="16" rect="720.000000,156.400000,924.000000,270.400000"
+/></text
+><text color="#FFD100" creationdate="D:20181109093746+01'00'" flags="print,nozoom,norotate" date="D:20181109094127+01'00'" name="639587e3-1af0-c547-a35d-d6ff88766475" icon="Comment" page="17" rect="313.731000,327.022000,331.731000,345.022000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Messaggio persistente: quando un messaggio viene scritto sulla coda la coda dovrà salvare questo messaggio in memoria.
+Messaggio non persistente: quando un messaggio viene scritto sulla coda, la coda dovrà mantenere il messaggio in memoria volatile. Ovviamente in quest'ultimo caso in caso di fault i messaggi verranno persi.
+
+Per il modello di comunicazione pub/sub, la macroscelta è durevole o non durevole:
+Topic pub/sub Durevole: una coda uno a molti sono mantenuti fin quando tutti i subscribe non abbiano ricevuto tutti i messaggi, anche se il subscriber non è connesso.
+
+Topic pub/sub non Durevole: in questo caso se un subscriber non è connesso non viene mantenuto.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="17" rect="720.000000,156.400000,924.000000,270.400000"
+/></text
+><text color="#FFD100" creationdate="D:20181109095406+01'00'" flags="print,nozoom,norotate" date="D:20181109095704+01'00'" name="25a1cec3-be96-f14b-b2c2-54dd73b970e2" icon="Comment" page="19" rect="360.005000,252.373000,378.005000,270.373000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>HEADER: Nome della coda dove lasciare di mersaggio, modalità di consegna (persistenza non persistente), TimeStamp, priorità (Vedremo), replyTo dove il mittente si aspetta di ricevere la risposta.&#xD;Ci sono anche delle proprietà sia standard che application-specific. Ad esempio standard: destinazione,  ecc (guarda slide), JMSType come è codificato il body --&gt; slide successiva.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="19" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181109095819+01'00'" flags="print,nozoom,norotate" date="D:20181109095940+01'00'" name="55958a5a-f790-5a48-a58e-771e5effaeea" icon="Comment" page="20" rect="370.549000,149.191000,388.549000,167.191000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>MapMessage: Come stream ma dove i dati sono organizzati come coppia nome valore
+
+BytesMessage: in questo caso occorre che mittente e destinatario si siano messi d'accordo su come interpretare i messaggi in quanto i dati saranno raw.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="20" rect="570.134000,156.482000,774.352000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181109100336+01'00'" flags="print,nozoom,norotate" date="D:20181109102632+01'00'" name="37c910d1-4351-2c46-b52f-5773c4390c5a" icon="Comment" page="24" rect="352.474000,400.743000,370.474000,418.743000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>L'oggetto connection non serve per effettuare le letture e le scritture sulla coda ma server per ottenere un oggetto Session e sarà lui ad effettuare le operazioni sulla coda.&#xD;&#xD;Session ovviamente è generico se vogliamo lavorare con le code si usa la QueueSession altrimenti la TopicSession. Le operazioni sul singolo oggetto session sono serializzate come se il singolo oggetto session  fosse single-threaded. &#xD;L'idea è quella di andare a riportare i messaggi in base a come sono stati specificati all'interno del programma. Tuttavia non vale in termini generali in quanto si potrebbe avere un approccio diverso. Si pensi ad esempio in gruppo di persone che chattano tra loro è possibile che arrivi prima un messaggio che in realtà è stato inviato dopo rispetto ad un altro.&#xD;Questo perché nel server non viene stabilito un ordine di delivery in quanto l'ordine del messaggio è costoso. Tramite l'oggetto Session abbiamo la possibilità di avere questa possibilità di scelta sull'ordinamento di messaggi.
+
+Con l''oggetto Session viene introdotto un nuovo livello di indirettezza.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="24" rect="570.134000,156.482000,774.352000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181109101049+01'00'" flags="print,nozoom,norotate" date="D:20181109101142+01'00'" name="1e643c7f-04e4-1247-b68e-884fa7e402f8" icon="Comment" page="25" rect="369.043000,417.312000,387.043000,435.312000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Le usiamo per avere nel caso di scrittore un MessageProducer nel caso di lettore un MessageConsumer. Con questi effettueremo operazioni di send o di receive.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="25" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181109101220+01'00'" flags="print,nozoom,norotate" date="D:20181109101307+01'00'" name="76b44ff2-fb8a-f546-b27f-f140fbc87ac7" icon="Comment" page="26" rect="612.310000,386.433000,630.310000,404.433000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Caso non bloccante:
+Il MessageConsumer registra un metodo di callback (onMessage) e questo verrà chiamato in callback da jms ogni volta che c'è un messaggio da leggere.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="26" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181109101825+01'00'" flags="print,nozoom,norotate" date="D:20181109101854+01'00'" name="d8d03a45-acb0-b640-be02-614c4926f9bd" icon="Comment" page="31" rect="356.239000,70.110700,374.239000,88.110700" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>La scelta di:
+- transazioni (si o no)
+- ack (tipo)
+Si fa qui!
+</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="31" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181109104539+01'00'" flags="print,nozoom,norotate" date="D:20181109104955+01'00'" name="0c57b9fd-8d8d-fd42-b667-e88159df2c8a" icon="Comment" page="36" rect="360.005000,252.373000,378.005000,270.373000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Possiamo avere delle sessioni che siano transacted oppure no:
+- Se lo è il programmatore non ci può fare niente, in jms alla fine della transazione viene inviato automaticamente dal sistema un ack verso il jms provider. In questo scenario è quindi automatico. Cosa vuol dire che l'ack viene inviato alla fine della transazione? Si tratta di una ack cumulativo, quindi un unico ack che riporta quali messaggi sono stati ricevuti. Quindi anche se le operazioni sono di più alla fine della transazione verrà inviato un unico ack.
+
+Nel caso in cui la sessione non è transacted, dobbiamo specificare che tipologia di ack usare (slide successiva).</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="36" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181109104959+01'00'" flags="print,nozoom,norotate" date="D:20181109105752+01'00'" name="2b04aede-f56c-7643-8d74-e5f1b9893454" icon="Comment" page="37" rect="632.645000,380.408000,650.645000,398.408000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Nel primo caso l'ack viene inviato automaticamente dal supporto jms, tutte le volte che viene terminato con successo la receive, nel caso di non bloccante quando viene invocato il metodo onMessage. In questo caso il programmatore non dovrà scrivere neanche una riga di codice che riguarda l'ack. Manda un ack singolo ad ogni messaggio ricevuto. 
+Difetti: mandiamo un ack ogni volta che riceviamo un messaggio
+A questo punto possiamo scegliere il CLIENT ACKNOWLEDGMENT. In questo caso siamo noi programmatori a stabilire quando inviare l'ack. L'idea è fallo quando ci pare, ovviamente se lo inviamo dopo un tot di messaggi l'ack sarà un ack cumulativo di tutti i messaggi ricevuti (ovviamente per implementarlo basta inviare un ack che contiene l'id? dell'ultimo messaggio ricevuto).
+
+Un'altra soluzione è la lazy acknowledgment: l'invio dell'ack è fatto sempre dal supporto di JMS provider, ma non viene fatto alla ricezione di ogni singolo messaggio ma lo fa quando gli pare in maniera "saltuaria". Ovviamente saranno degli ack cumulativi. Di quanti messaggi? Bé dipende da quanti messaggi sono stati ricevuti fino a quel momento visto che è saltuario.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="37" rect="280.171000,199.670000,736.390000,600.252000"
+/></text
+><text color="#FFD100" creationdate="D:20181109105931+01'00'" flags="print,nozoom,norotate" date="D:20181109105942+01'00'" name="e8863fce-7dca-2142-bc2a-902dd77d4e72" icon="Comment" page="37" rect="173.224000,475.305000,191.224000,493.305000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>L'ack viene inviato dal cliente.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="37" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><highlight color="#FFD100" opacity="0.399994" creationdate="D:20181109110703+01'00'" flags="print" date="D:20181109110849+01'00'" name="d2925807-539f-6b4a-a68a-d3b3364cef01" page="37" coords="98.016000,342.739000,426.010000,342.739000,98.016000,323.942000,426.010000,323.942000" rect="92.998000,323.354000,431.029000,343.326000" subject="Evidenziato" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Raro ma sì. Se l'ack viene perso il jms provider invia di nuovo il messaggio. Tuttavia lato cliente il supporto a JMS può verificare se l'id di quel messaggio era stato già ricevuto e buttare via il messaggio ma inviare nuovamente l'ack. Ma la maggior parte delle volte non è così intelligente e quindi ci saranno dei messaggi duplicati.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="37" rect="720.000000,228.739000,924.000000,342.739000"
+/></highlight
+><highlight color="#FFD100" opacity="0.399994" creationdate="D:20181109110928+01'00'" flags="print" date="D:20181109111524+01'00'" name="9e0050b5-787f-5e40-a6a2-a1ad5ce6a927" page="37" coords="305.677000,215.039000,633.651000,215.039000,305.677000,196.242000,633.651000,196.242000" rect="300.659000,195.654000,638.669000,215.626000" subject="Evidenziato" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Si alzano le probabilità in questo caso. Un motivo potrebbe essere al fatto che il problema sia che il programmatore si sia dimenticato di inviare l'ack. Un altro caso è il fatto che ci potrebbero essere degli overhead lato cliente e quindi deciderà di inviare l'ack alla fine.
+
+Ovviamente lo stesso vale per la tipologia di ack successiva! In quanto si fa sempre utilizzo di un ack cumulativo.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="37" rect="720.000000,101.039000,924.000000,215.039000"
+/></highlight
+><text color="#FFD100" creationdate="D:20181109111812+01'00'" flags="print,nozoom,norotate" date="D:20181109111949+01'00'" name="237ba8c1-e676-6d4d-8b11-50631a027bb5" icon="Comment" page="38" rect="380.340000,437.647000,398.340000,455.647000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Un cliente potrebbe essere interessato a ricevere un ack quando invia un messaggio, questo perché vuole essere sicuro che il messaggio sia ricevuto correttamente da JMS Provider. In questo caso si parla di ack in produzione.
+
+Quando noi facciamo la send risulterà essere bloccante dino alla ricezione dell'ack.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="38" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181109112707+01'00'" flags="print,nozoom,norotate" date="D:20181109112813+01'00'" name="effd9225-ea35-6e4a-8781-3adda9d4ffb1" icon="Comment" page="41" rect="360.005000,252.373000,378.005000,270.373000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Il livello di priorità serve solo per dire al JMS provider, nel caso di sovraccarico puoi decidere di buttare via o di postporre l'invio dei messaggi a priorità più bassa.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="41" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181109113000+01'00'" flags="print,nozoom,norotate" date="D:20181109113215+01'00'" name="a61ba874-2fcb-4f4b-a0f1-ebf1211a3467" icon="Comment" page="41" rect="387.119000,124.337000,405.119000,142.337000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Dopo 60 secondi non vale più la pena di mantenere/inviare questo messaggio perché troppo vecchio. Questo è il senso delle timeToLive().
+
+
+Queste due proprietà non hanno un effetto obbligatorio sui messaggi. Non ci dobbiamo aspettare che se inviamo un messaggio a priorità 9 e uno a priorità 0 arriva prima quello a priorità 9 poi quello a priorità zero, proprio per il motivo sopra citato.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="41" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181115143750+01'00'" flags="print,nozoom,norotate" date="D:20181115144155+01'00'" name="7dfbd3d6-4a88-cf4d-800a-427a75ca8a55" icon="Comment" page="42" rect="360.005000,252.373000,378.005000,270.373000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Ci sono molti servizi di affidabilità che permettono all'amministratore di stabilire la granularità di JMS.
+
+Ovviamente in base ai servizi scelti ci saranno dei costi in termini di tempo e di overhead.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="42" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181115144203+01'00'" flags="print,nozoom,norotate" date="D:20181115144718+01'00'" name="ee8840fe-90d0-3f4a-8fd0-e75fae67cf0b" icon="Comment" page="43" rect="360.005000,252.373000,378.005000,270.373000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Durability ha senso solo nel caso dei topic.
+
+Tutte le volte che un sottoscrittore si iscrive gli viene dato un id univoco. Quest'ultimo verrà associato in realtà al ricevitore dei messaggi alla durable subscription.
+
+In caso di durable subscription la coda non può essere liberata fin quando tutti i subscriber (anche quelli non connessi) non abbiano ricevuto il messaggio.
+</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="43" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181115145103+01'00'" flags="print,nozoom,norotate" date="D:20181115145457+01'00'" name="4429b408-64d0-b549-bec6-696318052d14" icon="Comment" page="44" rect="360.005000,252.373000,378.005000,270.373000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Perché usare le transazioni con i messaggi? Quando vogliamo leggere/Scrivere i nostri messaggi come un'unità atomica&#xD;&#xD;Importante: Ovviamente questo concetto rimane soltanto locale alla messaggistica! Non riguarda altre operazioni potenzialmente distribuite, come ad esempio l'interazione con un database.
+
+Le transazioni servono per operazioni sulla stessa coda/topic --&gt; quindi una stessa destinazione.
+
+</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="44" rect="570.134000,156.482000,774.352000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181115145508+01'00'" flags="print,nozoom,norotate" date="D:20181115145750+01'00'" name="40c9d3f1-d148-734b-aa76-674050fd57a2" icon="Comment" page="45" rect="360.005000,252.373000,378.005000,270.373000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>E se voglio usare una transazione unica per tutti? Transazioni non più locali ma distribuite. Quindi dovremo usare delle JavaTransactionAPI in quanto non esiste un modo per farlo tramite JMS.
+</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="45" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181115150009+01'00'" flags="print,nozoom,norotate" date="D:20181115150329+01'00'" name="e18eff4d-1a10-b847-b2a4-d2ccbfe065d1" icon="Comment" page="46" rect="641.683000,396.224000,659.683000,414.224000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Lato ricevitore possiamo creare dei selettori che si basa sulla selezione di una stringa.
+Questo ci permetterà di realizzare delle vere e proprie operazioni di filtering. Ad esempio possiamo fare dei filtering sulle proprietà o sul contenuto (quindi body) del messaggio (molto raro).
+Quindi JMS permette di effettuare soltanto dei filtri a livello di header e di proprietà.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="46" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181115150351+01'00'" flags="print,nozoom,norotate" date="D:20181115150936+01'00'" name="fff1a0dd-a79c-dd45-86ec-4caea8db4574" icon="Comment" page="47" rect="97.156200,483.589000,115.156000,501.589000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Chi legge i messaggi di JMS è un Message-driven bean e quando ci sono i messaggi da consumare verrà stimolato dal container per consumarli.
+
+Supponendo di aver creato una coda (JMS destination) ci saranno un tot di messaggi in coda. Il nostro Message-driven bean sarà in ascolto su questa coda. L'ejb container instanzierà un pool di istanza di Message-driven bean e ognuna di questa farà da consumatore su questa coda. Ovviamente non vanno a consumare tutte lo stesso messaggio ma ogni istanza consuma un messaggio diverso. Questo mi garantisce di avere un consumo di messaggi parallelo.
+
+Questo è lo schema che andremo principalmente ad utilizzare in applicazioni enterprise.
+
+Ovvio che se i messaggi sono durable non verranno consumati più velocemente anche se ho la concorrenza gestita dal container, in quanto i messaggi dovranno essere consumati da tutti i subscriber. Fin quando tutti non hanno letto il messaggio, quest'ultimo rimarrà in coda (quindi non sarà consumato).</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="47" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181115150955+01'00'" flags="print,nozoom,norotate" date="D:20181115151213+01'00'" name="db557ea1-d33a-5b4e-8093-f277213adaab" icon="Comment" page="48" rect="609.297000,323.169000,627.297000,341.169000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Enterprise service bus: base word per individuare una serie di tecnologie enterprise.
+</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="48" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181115151238+01'00'" flags="print,nozoom,norotate" date="D:20181115152233+01'00'" name="d17853fb-d708-d647-919d-08726ff9604e" icon="Comment" page="48" rect="360.005000,252.373000,378.005000,270.373000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>SOA:
+- no conoscenza statica dei servizi da parte di un cliente;
+- orientata alla distribuzione di servizi;
+- è un'architettura pura! Senza riferimento a nessuna tecnologia specifica. In questo modo possiamo integrare roba eterogenea;
+- Interfaccia. I servizi devono essere descritti tramite un'interfaccia. In questo modo la descrizione dell'interfaccia del servizio può essere recuperata dinamicamente da un cliente;
+- Messagge-orient. L'invocazione dei servizi avviene mediante scambio di messaggi. Nessun accoppiamento tra cliente e servitore;
+- RMI è SOA o no? 
+
+La prima tecnologia molto adatta per rappresentare questa tipologia di servizio è stata Web Services.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="48" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181115160303+01'00'" flags="print,nozoom,norotate" date="D:20181115160638+01'00'" name="ac152c44-5248-6b41-aaa5-9dd43781fa73" icon="Comment" page="51" rect="671.809000,458.736000,689.809000,476.736000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Tecnologia con architettura SOA. Realizzato tramite 3 tecnologie specifiche:
+- SOAP protocollo per lo scambio di messaggi in un'architettura SOA;
+- WSDL per la descrizione delle interfacce dei servizi. Ad esempio dire che un servizio è fatto da delle operazioni ognuna delle quali ha un parametro di ingresso e un parametro di uscita;
+- UDDI servizio di nomi per mantenere le interfacce dei servizi esposti.
+
+Tutte queste tecnologie insieme si realizza una Service Oriented Architecture attraverso la tecnologia Web service.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="51" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181115153638+01'00'" flags="print,nozoom,norotate" date="D:20181115153651+01'00'" name="e0b2ff13-770f-0749-8b3d-91d29f97759b" icon="Comment" page="55" rect="558.083000,399.990000,576.083000,417.990000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>ha un difetto che essendo centralizzata tende a scalare male.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="55" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181115153714+01'00'" flags="print,nozoom,norotate" date="D:20181115153909+01'00'" name="2298ceb7-d61e-424e-beb2-bef346f00160" icon="Comment" page="56" rect="360.005000,252.373000,378.005000,270.373000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Quindi eliminiamo la parte centralizzata usando un bus. Questo sarà un pezzo di software che trasferisce i messaggi ai diversi pezzettini di software che si affacciano sul bus. Quindi servirà il "pezzettino" di software che si occupa di questo scambio di messaggi andando a costruire i messaggi con la giusta sintassi (Adattatore).</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="56" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181115153955+01'00'" flags="print,nozoom,norotate" date="D:20181115154355+01'00'" name="3dc27d3c-7c14-b74c-9a31-e4bff31d6336" icon="Comment" page="57" rect="360.005000,252.373000,378.005000,270.373000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>L'idea di ESB ha avuto abbastanza successo in Java. Infatti, molte aziende hanno creato dei loro bus scritti in java.
+
+Le applicazioni legacy andranno a scrivere e leggere dei messaggi che serviranno per invocare dei servizi, oppure i servizi verranno invocati su loro stessi.
+
+Servirà una funzionalità di naming per la registrazione di servizi.
+Se vogliamo fare le cose complicate si parla di orchestratore.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="57" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181115154559+01'00'" flags="print,nozoom,norotate" date="D:20181115154915+01'00'" name="5615d2ed-2933-cb44-905b-9d0d298da8a0" icon="Comment" page="59" rect="360.005000,252.373000,378.005000,270.373000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>ha avuto tanto successo che:
+tante aziende hanno prodotto dei propri bus in java;
+Per questo è stato introdotto la JSR 208 o meglio JBI che permette di usare delle API generiche per interagire con qualsiasi tipologia di Bus.
+Infatti la maggior parte dei bus realizzati dalle aziende mettono a disposizione queste API.
+
+Questo è stato introdotto proprio perché ogni azienda si creava il suo BUS e quindi ognuno funzionava in modo diverso. Quindi avedere un BUS che renda il tutto più generale avrebbe fatto comodo.
+</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="59" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181115161802+01'00'" flags="print,nozoom,norotate" date="D:20181115161849+01'00'" name="4b836ba4-3776-ba40-828e-bfa23e759dd3" icon="Comment" page="60" rect="318.582000,343.504000,336.582000,361.504000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>È una coda JMS con qualche funzionalità in più. Infatti ci saranno delle operazioni di routing che potranno essere anche abbastanza complesse.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="60" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181115162219+01'00'" flags="print,nozoom,norotate" date="D:20181115162652+01'00'" name="894c9caa-4d99-3e4c-9b1d-475e3a91e626" icon="Comment" page="61" rect="360.005000,252.373000,378.005000,270.373000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Di solito noi dovremmo dare un WorkFlow al nostro NMR. Questo gli dirà per esempio:&#xD;guarda che i messaggi ricevuti di x1 prima li passi all'applicazione B, poi devi passarli all'applicazione C e successivamente alla destinazione.&#xD;Un altro esempio se B non riceve un messaggio sia da x1 che da x2 non deve far passare nessuno dei due.&#xD;&#xD;Sostanzialmente sono una serie di regole che devono essere seguite.
+
+Nel caso d'esempio è un'architettura molto semplice. Tuttavia si deve passare sempre dal NMR.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="61" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181115163222+01'00'" flags="print,nozoom,norotate" date="D:20181115163245+01'00'" name="fe16f923-f78b-e144-8571-57ae32399cf1" icon="Comment" page="62" rect="360.005000,252.373000,378.005000,270.373000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Consumer --&gt;(chi partecipa allo scambio di messaggi JBI).</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="62" rect="570.134000,156.482000,774.352000,270.373000"
+/></text
+></annots
+><f href="../07-JMS(1x).pdf"
+/><ids original="E6B0AD0A12094440BF941182802C0006" modified="FBEE65787A044744A36CCA662A7CA911"
+/></xfdf
+>

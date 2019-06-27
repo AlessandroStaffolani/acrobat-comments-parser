@@ -1,0 +1,16 @@
+{
+  "name": "acrobat-comments-parser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "parser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "parse": "node ./parser.js"
+  },
+  "author": "Alessandro Staffolani",
+  "license": "MIT",
+  "dependencies": {
+    "markdown-pdf": "^9.0.0",
+    "xml2js": "^0.4.19"
+  }
+}

@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xfdf xmlns="http://ns.adobe.com/xfdf/" xml:space="preserve"
+><annots
+><text color="#FFD100" creationdate="D:20181115164255+01'00'" flags="print,nozoom,norotate" date="D:20181115164353+01'00'" name="3d1f8473-ee0d-9842-9782-5256ae13c820" icon="Comment" page="0" rect="687.625000,238.816000,705.625000,256.816000" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Sebbene dominante EJB  non è l'unica tecnologia a container pesante.
+Container pesante --&gt; deve essere l'intermediario SEMPRE tra il componente e il cliente.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="0" rect="720.000000,142.816000,924.000000,256.816000"
+/></text
+><text color="#FFD100" creationdate="D:20181115171524+01'00'" flags="print,nozoom,norotate" date="D:20181115171545+01'00'" name="b485172d-92ea-d440-86fb-44856473bb9a" icon="Comment" page="2" rect="360.005000,252.373000,378.005000,270.373000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Corba 3 --&gt; introduzione del container.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="2" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181115165011+01'00'" flags="print,nozoom,norotate" date="D:20181115171734+01'00'" name="6f3146a6-1db3-404f-91ff-cba3d4f8f10c" icon="Comment" page="3" rect="360.005000,252.373000,378.005000,270.373000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Perché esiste? Perché funge da middleware per applicazioni eterogenee.&#xD;Fatto tramite RPC, che permette di mettere in contatto clienti e servitore scritti in linguaggi di programmazione diversi. Questo perché potremmo avere dei servitori legacy e dei clienti scritti con linguaggi di programmazione moderni.&#xD;&#xD;Molto ricca e peina di overhead.&#xD;&#xD;Quello che verrà esposto dal servitore sarà un oggetto, ma non è detto che la tecnologia che ci sta al di sotto sia un oggetto. Infatti, Corba deve esporre i servizi ai possibili clienti come se fossero degli oggetti(OBJECT Servant).&#xD;&#xD;Modalità più semplice: invocazione statica. Io sono un cliente scritto in un certo linguaggio che voglio usare il servizio corba nel modo più trasparente possibile. Questo signfica che passa da uno stub (scritto nello stesso linguaggio del cliente) ed è lui che nasconde l'eterogeneità del linguaggio. Il servitore dovrà almeno scrivere un file IDL che mi fa l'interfaccia dei servizi che voglio esporre (descrive i servizi che si vogliono esporre). È l'unica cosa che dovrà fare il servitore.&#xD;&#xD;Se noi vogliamo prescindere dal linguaggio di programmazione, è possibile che il servitore abbia bisogno di essere attivato (attivare oggettti, creare dei thread etc). Questo viene fatto dall'object adapter (esiste anche il Portable object adapter).&#xD;Questo avviene nel caso statico.&#xD;&#xD;Dinamicamente non so che linguaggio è usata dall'altra parte per questo esiste uno stub dinamico che è il DII (DSI dall'altro lato). In un'invocazione di parametri non so la tipologia di parametri che devo passare, quindi li dentro ci deve essere qualcuno che riesca a fare il murshulling e l'unmarshalling dei parametri.&#xD;&#xD;Se il servitore vuole esporre i servizi dinamicamente si usa la ORB interface.&#xD;&#xD;CORBA è un modello ad oggetti.&#xD;&#xD;Un'altra cosa che fa l'object adapter è il multiplexing dei messaggi nel caso in cui io abbia più clienti per uno stesso servitore, questi verranno distribuiti per distribuire il carico.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="3" rect="417.260000,189.192000,621.478000,371.155000"
+/></text
+><text color="#FFD100" creationdate="D:20181115172515+01'00'" flags="print,nozoom,norotate" date="D:20181115172532+01'00'" name="5c905bf7-8f0b-0643-8312-16a534fca50d" icon="Comment" page="7" rect="665.784000,364.592000,683.784000,382.592000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Il component Server può avere dentro più container.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="7" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><highlight color="#FFD100" opacity="0.399994" creationdate="D:20181116093602+01'00'" flags="print" date="D:20181116093619+01'00'" name="64e3c678-935f-6947-a2d5-505d6daae527" page="13" coords="158.400000,195.408000,199.223000,195.408000,158.400000,187.937000,199.223000,187.937000" rect="156.406000,187.704000,201.217000,195.641000" subject="Evidenziato" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Interfaccia per l'invocazione dall'esterno (Chiamata anche facet)</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="13" rect="720.000000,81.407500,924.000000,195.408000"
+/></highlight
+><highlight color="#FFD100" opacity="0.399994" creationdate="D:20181116093625+01'00'" flags="print" date="D:20181116093721+01'00'" name="b41fa873-cbe1-f44e-8a52-24cde9d0d6a2" page="13" coords="309.182000,202.884000,356.222000,202.884000,309.182000,195.414000,356.222000,195.414000" rect="307.188000,195.180000,358.216000,203.117000" subject="Evidenziato" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Invoca MyLocation --&gt; NavDisplay espone quindi un reseptacle che gli permette di invocare il metodo MyLocation.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="13" rect="570.134000,88.698300,774.352000,202.589000"
+/></highlight
+><text color="#FFD100" creationdate="D:20181116093933+01'00'" flags="print,nozoom,norotate" date="D:20181116094023+01'00'" name="5f7ffc76-966f-e940-8177-b2295effa389" icon="Comment" page="14" rect="186.781000,396.977000,204.781000,414.977000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>In CCM quello che si aggiunge è il Component IDL Definitions, che definisce quali sonon le facet, respectacle, evetns e proprietà dei componenti.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="14" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181115174059+01'00'" flags="print,nozoom,norotate" date="D:20181115174127+01'00'" name="2731b2f7-bcd3-5b48-b042-825e1c76fa77" icon="Comment" page="16" rect="279.418000,404.509000,297.418000,422.509000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Nel file di descrizione possiamo definire tutte queste tipologie di porte oltre che alle interfacce come devono essere fatte.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="16" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181116094214+01'00'" flags="print,nozoom,norotate" date="D:20181116094510+01'00'" name="4b783a13-ef2e-bc46-8303-3aa960020566" icon="Comment" page="16" rect="151.383000,215.468000,169.383000,233.468000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Facets: interfaccia esposta verso l'esterno. Possiamo specificarne più di una (ad esempio in base alla tipologia di cliente).
+Sorgente per evento (publish e emits);
+Attribute per stabilire le proprietà configurabili.
+
+Questo è il modello di componente high level.
+Ogni istanza di componente in CCM verrà prodotta runtime da un componente di supporto chiamato HOME (scarsa fantasia).</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="16" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181116094517+01'00'" flags="print,nozoom,norotate" date="D:20181116095103+01'00'" name="5ab05153-a72e-8c47-8467-9e4377931d72" icon="Comment" page="17" rect="200.338000,475.305000,218.338000,493.305000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Se facciamo riferimento agli oggetti (quindi Corba 2) la gestione del ciclo di vita è fuori dalla specifica. Questo significa che questa parte deve essere realizzato da proprietari --&gt; scarsa scalabilità&#xD;&#xD;Nel modello a componenti Corba 3, la gestione del ciclo di vita è definita nella specifica.&#xD;&#xD;Corba 3 mette a disposizione un po' di home che implementano una gestione del ciclo di vita diverso. In questo modo non forzo il programmatore a stabilire come deve essere fatto il componente (soprattutto perché si parla di linguaggi di programmazione differenti), infatti al programmatore viene lasciata soltanto la scelta della home che ha un determinato modo di gestire il ciclo di vita.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="17" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181116095128+01'00'" flags="print,nozoom,norotate" date="D:20181116095157+01'00'" name="d6e6b2b4-a4a1-9a4e-9e5d-e691531b9bf8" icon="Comment" page="18" rect="140.839000,383.421000,158.839000,401.421000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Una home deve agganciarsi ai componenti.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="18" rect="570.134000,156.482000,774.352000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181116095559+01'00'" flags="print,nozoom,norotate" date="D:20181116095654+01'00'" name="7ce5b0ea-20bc-0d43-a929-c8c8823e06f7" icon="Comment" page="20" rect="360.005000,252.373000,378.005000,270.373000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Non è detto che il componente sia mappato ad un unico oggetto Corba, ma può essere mappato a più oggetti Corba. Questo gli permette di metterli tutti insieme.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="20" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181116095822+01'00'" flags="print,nozoom,norotate" date="D:20181116095917+01'00'" name="d7b7ac51-0245-4642-a24e-7f3c1fdef698" icon="Comment" page="22" rect="170.965000,348.023000,188.965000,366.023000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>uses --&gt; receptacle
+provides --&gt; facet
+
+Cosa se ne fa corba di questo receptacle? Per effettuare il binding tra il facet e il receptacle corrispondente.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="22" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181116100502+01'00'" flags="print,nozoom,norotate" date="D:20181116100519+01'00'" name="a54e2375-4dc7-5947-97ae-3ce61ac5e035" icon="Comment" page="23" rect="558.083000,465.514000,576.083000,483.514000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Il componente in questo caso supporta nativamente gli eventi.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="23" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><highlight color="#FFD100" opacity="0.399994" creationdate="D:20181116100759+01'00'" flags="print" date="D:20181116100846+01'00'" name="32215296-f859-f94f-bb40-2a62fdad5f33" page="24" coords="659.816000,68.543900,697.742000,68.543900,659.816000,51.660200,697.742000,51.660200" rect="655.309000,51.132500,702.249000,69.071600" subject="Evidenziato" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>data distribuition server: sistema a scambio di messaggi con vincoli real time --&gt; si usa a livello industriale ed è uno dei dispositivi più evoluti sul mercato.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="24" rect="720.000000,-45.456100,924.000000,68.543900"
+/></highlight
+><text color="#FFD100" creationdate="D:20181116101255+01'00'" flags="print,nozoom,norotate" date="D:20181116101324+01'00'" name="122d0bb9-1718-ef48-a145-3c9f9e440015" icon="Comment" page="28" rect="445.864000,401.496000,463.864000,419.496000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>L'idea di queste porte è quello che possano essere recuperate dinamicamente e accedute dinamicamente.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="28" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181116101455+01'00'" flags="print,nozoom,norotate" date="D:20181116101816+01'00'" name="6faed1f4-9b6e-1742-9a07-a023dda19dfe" icon="Comment" page="29" rect="591.222000,427.103000,609.222000,445.103000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Per vedere le informazione di metalivello si fa una introspection mentre per accederle si usa la navigation.
+
+Qualcuno potrebbe dire perché non usare la reflection di java? Bé bisogna ricordarsi che qui i linguaggi di programmazione possono essere diversi, infatti questa parte è un altro compito assegnato al container di corba.
+
+</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="29" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181116101819+01'00'" flags="print,nozoom,norotate" date="D:20181116101920+01'00'" name="706eb0aa-6d4a-3e4e-a5a4-3033015e1e13" icon="Comment" page="31" rect="256.071000,297.562000,274.071000,315.562000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Un componente CORBA 3 dice più cose rispetto ad un oggetto corba e le cose in più che dice sono riassunte qui.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="31" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181116102354+01'00'" flags="print,nozoom,norotate" date="D:20181116102440+01'00'" name="f3571f0e-a1f5-7245-aca7-e59a91589f6a" icon="Comment" page="33" rect="360.005000,252.373000,378.005000,270.373000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Quello che hanno deciso di fare è avere un più container all'interno del server ognuno dei quali avrà una home</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="33" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181116103022+01'00'" flags="print,nozoom,norotate" date="D:20181116103229+01'00'" name="bada68bb-067c-a14b-99de-cac6f2815be1" icon="Comment" page="35" rect="360.005000,252.373000,378.005000,270.373000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Categorie di componenti:
+Service:
+Componente che sarà eseguito su container di tipo Session. Il suo ciclo di vita verrà gestito come un componente senza stato.
+
+Session:
+a runtime ti faccio eseguire nello stesso container precedente Session. In questo caso la gestione del ciclo di vita è conversational (statefull)
+
+Le restanti categorie di componenti sono pensati per la gestione di dati.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="35" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181116103518+01'00'" flags="print,nozoom,norotate" date="D:20181116103619+01'00'" name="f889e400-ee08-c24b-ade1-1676f7a1fb45" icon="Comment" page="36" rect="360.005000,252.373000,378.005000,270.373000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>I container ovviamente sono pezzi di software già fatti quindi non abbiamo intenzione di crearci i nostri. La Home viene generata automaticamente a partire dal component IDL.
+</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="36" rect="297.865000,198.754000,589.138000,406.245000"
+/></text
+><text color="#FFD100" creationdate="D:20181116103626+01'00'" flags="print,nozoom,norotate" date="D:20181116103700+01'00'" name="dc0fbf3c-f5ea-b042-bc1e-a8b89d0a9788" icon="Comment" page="37" rect="360.005000,252.373000,378.005000,270.373000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>La parte di Home non dobbiamo scriverla noi ma viene generata automaticamente come già detto --&gt; riteniamoci fortunati.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="37" rect="720.000000,156.373000,924.000000,270.373000"
+/></text
+><text color="#FFD100" creationdate="D:20181214095204+01'00'" flags="print,nozoom,norotate" date="D:20181214095633+01'00'" name="ad360015-d76b-6e4e-934c-0667e184d9aa" icon="Comment" page="38" rect="359.466000,246.400000,383.466000,270.400000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.10.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Per mettere in esecuzione il componente CORBA, bisogna tenere in considerazione che può essere scritto in un qualsiasi linguaggio di programmazione. 
+Separazione fra servant e codice applicativo nel modello a oggetti. Qui avviene la stessa cosa con la complicazione della home.
+Executor esprime il codice che deve essere eseguito per la logica di business o la logica di home, affiancato dal servant perché altrimenti non ce la fa con l'esecuzione (ascolta registrazione).</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="38" rect="471.800000,156.510000,676.017000,270.400000"
+/></text
+><text color="#FFD100" creationdate="D:20181214095634+01'00'" flags="print,nozoom,norotate" date="D:20181214095813+01'00'" name="5170145c-6d47-314d-9d48-43bd2a7473f0" icon="Comment" page="38" rect="390.759000,473.474000,414.759000,497.474000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.10.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>Sostanzialmente avremo un executor per ogni tipologia di componente affiancato dal servant:
+ - executor per home;
+ - executor per componenti.
+
+Il servant non deve essere scritto! In quanto è il CIDL che genera automaticamente il codice dei servant.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="38" rect="720.000000,156.400000,924.000000,270.400000"
+/></text
+><text color="#FFD100" creationdate="D:20181214094743+01'00'" flags="print,nozoom,norotate" date="D:20181219144835+01'00'" name="f846e6f2-9dfe-c047-a6d3-2eef27c19e52" icon="Comment" page="39" rect="355.652000,215.107000,379.652000,239.107000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.10.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>RIPASSO&#xD;In base alla tipologia di container avviene la gestione del componente.&#xD;Somiglianze con EJB si estendono anche al fatto che si ha un home per ogni componente.
+
+In ogni nodo ci sono più container. In ogni container abbiamo più executor, uno per la home e uno per l'executor sicuramente, ma ne posso avere anche di più se la home decide di parallelizzare l'esecuzione dei componenti.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="39" rect="720.000000,156.400000,924.000000,270.400000"
+/></text
+><text color="#FFD100" creationdate="D:20181116103948+01'00'" flags="print,nozoom,norotate" date="D:20181116104514+01'00'" name="c326e0ae-9b88-d84e-a3a9-b89471886508" icon="Comment" page="39" rect="360.005000,252.373000,378.005000,270.373000" subject="Nota" title="angeloferaudo"
+><contents-richtext
+><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:19.8.0" xfa:spec="2.0.2"
+><p dir="ltr"
+><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-weight:normal;font-style:normal"
+>L'abbiamo visto perché:
+Sebbene molto diverso da EJB, comunque rimane un modello a container pesante.
+
+È container pesante perché sia in EJB 3 che in CORBA 3, quando un cliente invoca qualcosa (ad esempio un metodo su un componente), l'invocazione avviene sull'application server. Questo significa che ogni chiamata passa dal container e lo stesso avviene per la risposta.
+Lo stesso concetto rimane in CORBA£
+
+In CORBA invece dell'application server abbiamo il component server all0interno del quale non c'è un solo container ma più container. Anche in questo caso c'è una home che prima di invocare il componente fa tutte le operazioni che deve fare e poi fa la chiamata sul componente. Questo signfica che il cliente passa sempre da qualche elemento di middleware prima di arrivare al codice scritto dal programmatore.
+
+Conclusione: anche se sono estremamente diversi, condividono lo stesso modello logico (ovvero avere un middleware che si interpone tra le chiamate del cliente e il metodo da invocare) che è il modello a container pesante.</span
+></p
+></body
+></contents-richtext
+><popup flags="print,nozoom,norotate" open="no" page="39" rect="288.379000,186.697000,586.198000,367.352000"
+/></text
+></annots
+><f href="../08-CCM(1x).pdf"
+/><ids original="C55FE3CD5C13E542B9D857E7947220BB" modified="EA315051CE5F46789025BB7F88098CF7"
+/></xfdf
+>

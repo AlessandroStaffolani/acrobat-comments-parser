@@ -1,0 +1,5 @@
+
+Results/*
+PartialResults/*
+!Results/.gitkeep
+!PartialResults/.gitkeep
