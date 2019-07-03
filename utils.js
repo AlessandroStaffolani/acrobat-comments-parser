@@ -8,7 +8,7 @@ const commentsFolder = path.join(__dirname, 'Comments');
 const outputPartialFile = path.join(__dirname, 'PartialResults');
 const outputFile = path.join(__dirname, 'Results');
 
-function parseFile (path) {
+function parseFile(path) {
   const parser = new xml.Parser();
   return new Promise((resolve, reject) => {
     fs.readFile(path, (err, data) => {
@@ -27,19 +27,19 @@ function parseFile (path) {
   })
 }
 
-function getDirectoryFiles (directory, extension = '.xfdf') {
+function getDirectoryFiles(directory, extension = '.xfdf') {
   return fs.readdirSync(directory).filter(file => file.indexOf(extension) !== -1)
 }
 
-function appendToFile (data, fileName) {
+function appendToFile(data, fileName) {
   fs.appendFileSync(path.join(outputPartialFile, fileName), data)
 }
 
-function getFileNameNoExtension (filename, extension = '.xfdf') {
+function getFileNameNoExtension(filename, extension = '.xfdf') {
   return filename.replace(extension, '')
 }
 
-function markdownToPdf (fileFolder, fileFolderOut, fileName) {
+function markdownToPdf(fileFolder, fileFolderOut, fileName) {
   fs.createReadStream(path.join(fileFolder, fileName + '.md'))
     .pipe(markdownPdf({
       remarkable: {
